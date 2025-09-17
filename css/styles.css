@@ -14,22 +14,28 @@ body{
    flex-direction: row;
     justify-content: space-between;
    align-items: center;
+   
+ 
   
 }
+/*
 header .header-right{
 display: flex;
 align-items: center;
 column-gap: 11.5rem;
 
-}
+} */
 
 .header-right ul{
     display: flex;
     justify-content: space-around;
     column-gap: 2rem;
     list-style: none;
+  margin-right: 5rem;
 
 }
+a{ text-decoration: none;
+color: #ffffffc1;}
 
 ul li a:hover{
     cursor: pointer;
@@ -45,7 +51,8 @@ header .logo{
     display: flex;
     flex-direction: column-reverse;
     cursor: pointer;
-
+   
+;
 }
 .hero-section img{
   width: 42rem;
@@ -109,13 +116,13 @@ color: #ffffffc1;
     background-color: #ffffff5d;
     opacity: 0;
     transform: translateX(30rem);
-    animation: slideLeft 1.5s forwards;
+    animation: slideRight 1.5s forwards;
     animation-delay: 0.5s;
 
 }
 
 
-@keyframes slideLeft{
+@keyframes slideRight{
     to{
         opacity: 1;
         transform: translateX(0)
@@ -171,7 +178,7 @@ color: #ffffffc1;
    opacity: 0;
    transform:translateY(-15rem);
    animation: slideDown 1.5s forwards;
-   animation-delay: 1s;
+   animation-delay: 0.5s;
 }
 
 @keyframes slideDown{
@@ -263,7 +270,9 @@ margin-bottom: 6rem;
     flex-direction: column;
     justify-content: center;
 align-items: center;
+
 }
+
 .second-content img{
     width:37rem;
     height: 100%;
@@ -275,14 +284,19 @@ align-items: center;
     flex-direction: column;
     justify-content:flex-start;
     align-items: flex-start;
-    margin-right:70rem;
+    margin-right:66rem;
     margin-bottom: 3rem;
+    ;
 }
 
 .second-content .span span{
      width: 10rem;
     height: 1px;
     background-color: #ffffff5d;
+}
+
+.span h1{
+    font-size:1.6rem;;
 }
     
 .footer{
@@ -294,9 +308,14 @@ align-items: center;
    overflow: hidden;
    height: 5rem;
  margin-top: 15rem;
- position: relative;
+ position: absolute;
+
  
  
+}
+.footer p, h1{
+    font-size: 14px;
+    font-weight: lighter;
 }
 
 .footer ul{
@@ -317,4 +336,171 @@ height: 100vh;
     left: 0;
     right: 0;
     top: 0;
+  
 }
+
+
+/* About me page css styling  */
+
+
+.about-me-section{
+   display: flex;
+   justify-content: center;
+    column-gap: 0rem;
+    margin-top: 4rem;
+    margin-left: 0;
+overflow: hidden;
+
+}
+
+.about-me-section img {
+    width: 35rem;
+    margin-left: 6rem;
+   
+}
+
+.about-me-intro .span{
+     display: flex;
+    align-items: center;
+  column-gap:1rem;
+  margin-top: 4rem;
+  
+
+}
+
+.about-me-intro h1, h2{
+    font-size:75px;
+     font-weight: bold;
+     color: #ffffffc1;
+     margin:0;
+     opacity:0;
+     transform: translate(-9rem);
+     animation: slideIn 1s forwards;
+     animation-delay: 0.5s
+
+    }
+
+.about-me-intro h2{
+    text-align: left;
+    margin-right: 36rem;
+    
+}
+ .about-me-intro .span span{
+  width:28.5rem;
+    height: 1px;
+    background-color: #ffffff5d;
+    opacity:0;
+     transform: translateX(30rem);
+     animation: slideRight 1.5s forwards;
+     animation-delay: 0.5s
+     
+}
+
+
+@keyframes slideIn{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+    .about-me-para h1, p{
+        font-size: smaller;font-weight: lighter;
+
+    }
+
+
+    .about-me-intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+
+
+    table{
+        display: flex;
+        flex-direction: column;
+        
+        width:40rem; 
+        background-color: #ffffffc1;
+        color: black;
+       
+
+        
+    }
+
+
+    tr{
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+ 
+   padding: 1rem;
+    }
+
+    table .tr{
+        border-bottom:1px solid #4545455d;
+     
+    }
+
+
+    .about-equipment {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        margin-left: 2rem;
+    }
+
+ .about-span{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+    
+ }
+    .about-span span{
+        width: 10rem;
+        height: 1px;
+        background-color: #ffffff5d;
+        margin-bottom: 2rem;
+       
+    }
+
+
+    .about-span h2{
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .team-members{
+
+display: flex;
+column-gap:4rem;
+
+}
+
+
+
+    .team-member-card img{
+        width: 300px;
+    }
+
+    .about-team{
+        margin-left: 3rem;
+        
+    }
